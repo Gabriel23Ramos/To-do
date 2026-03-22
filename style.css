@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #020617;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px); /* efeito moderno */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ================= INPUT ================= */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* ================= BOTÕES ================= */
+button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: black;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* ================= FILTROS ================= */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  background: #1e293b;
+  color: white;
+}
+
+.filters button.active {
+  background: #38bdf8;
+  color: black;
+}
+
+/* ================= LISTA ================= */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #1e293b;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation: fadeIn 0.3s ease;
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* ================= AÇÕES(EDITAR/DELETAR)================= */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  transform: scale(1.2);
+}
+
+/* ================= ESTADO COMPLETO================= */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ================= BOTÃO LIMPAR ================= */
+.clear-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #ef4444;
+  color: white;
+}
+
+/* ================= CONTADOR ================= */
+#contador {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* ================= ANIMAÇÃO ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

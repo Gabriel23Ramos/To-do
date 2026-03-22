@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+  <h1> To-do List</h1>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+    <button onclick="addTask()">Adicionar</button>
+  </div>
+
+  <div class="filters">
+    <button onclick="filterTasks('all', this)">Todas</button>
+    <button onclick="filterTasks('done', this)">Concluídas</button>
+    <button onclick="filterTasks('pending', this)">Pendentes</button>
+  </div>
+  <ul id="taskList"></ul>
+  <p id="contador"></p>
+  <button onclick="clearTasks()" class="clear-btn">
+    Limpar tudo
+  </button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
