@@ -2,7 +2,7 @@
 
 Aplicação de lista de tarefas desenvolvida com JavaScript puro.
 
-## 🚀 Funcionalidades
+# Funcionalidades
 - Adicionar tarefas
 - Marcar como concluída
 - Editar tarefas
@@ -10,10 +10,8 @@ Aplicação de lista de tarefas desenvolvida com JavaScript puro.
 - Filtro por status
 - Salvamento com localStorage
 
-## 💻 Tecnologias
+# Tecnologias
 - HTML
 - CSS
 - JavaScript
 
-## 🌐 Acesse o projeto
-(link aqui depois)
